@@ -5,7 +5,7 @@ fn main() {
     let z: f64 = (x as f64) / y;
     println!("z: {}", z);
 
-    for elm: i32 in 0..5 {
-        println!("{}", elm)
+    for elm in 0..5 {
+        println!("{}", elm);
     }
 }

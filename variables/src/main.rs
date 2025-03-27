@@ -7,6 +7,8 @@ fn main() {
     x = 6;
     println!("The value of x is: {}", x);
 
+    println!("定数{}", CONSTANT);
+
 
     let y: i32 = 5;
 
