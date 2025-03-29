@@ -6,5 +6,8 @@
 // }
 
 fn main() {
-   
+   let mut maybe_number: Option<i32> = Some(5);
+   println!("{:?}", maybe_number);
+   let maybe_number: Option<i32> = None;
+   println!("{:?}", maybe_number);
 }
