@@ -4,10 +4,10 @@ use std::process;
 use mini::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
+    let args = env::args();
     //println!("{:?}", &args);
 
-    let config = Config::new(&args).unwrap_or_else(|err| {
+    let config = Config::new(args).unwrap_or_else(|err| {
         println!("Problem parsing arguments: {}", err);
         std::process::exit(1);
     });
